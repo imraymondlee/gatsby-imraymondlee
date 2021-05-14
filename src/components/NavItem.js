@@ -7,11 +7,13 @@ const StyledNavItem = styled.li`
 `;
 
 const StyledLink = styled(Link)`
+  margin: 0 0.5rem;
   text-decoration: none;
   color: ${(props) => props.theme.colors.bodyText};
 `;
 
 const StyledAnchor = styled.a`
+  margin: 0 0.5rem;
   text-decoration: none;
   color: ${(props) => props.theme.colors.bodyText};
 `;

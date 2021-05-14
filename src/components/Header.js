@@ -2,17 +2,25 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Nav from './Nav';
+import logo from '../images/logo.svg';
 
 const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 1.75rem auto;
+`;
+
+const StyledLogo = styled.img`
+  width: 3rem;
 `;
 
 const Header = () => {
   return (
     <StyledHeader>
       <Link to="/">
-        <img src="" alt="Raymond Lee" class="nav__logo" />
+        <StyledLogo src={logo} alt="Raymond Lee" />
       </Link>
       <Nav />
     </StyledHeader>

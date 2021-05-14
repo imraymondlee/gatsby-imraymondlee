@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import Header from './Header';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
@@ -23,12 +24,17 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const StyledMain = styled.main`
+  max-width: 1000px;
+  margin: auto;
+`;
+
 const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Header />
-      <main>{children}</main>
+      <StyledMain>{children}</StyledMain>
     </ThemeProvider>
   );
 };
