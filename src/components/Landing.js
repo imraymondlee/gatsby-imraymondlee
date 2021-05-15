@@ -24,7 +24,7 @@ const StyledLandingImage = styled.img`
   width: 35%;
 `;
 
-const IndexPage = () => {
+const Landing = () => {
   return (
     <StyledLanding>
       <div>
@@ -36,4 +36,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default Landing;
