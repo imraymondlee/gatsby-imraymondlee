@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: #f8f9fc;
     color: ${(props) => props.theme.colors.bodyText};
+    font-family: "Lato", sans-serif;
     line-height: 1.8;
   }
 `;

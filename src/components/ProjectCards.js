@@ -25,12 +25,12 @@ const StyledDetails = styled.div`
 const StyledTitle = styled.div`
   margin-top: 0.25rem;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   color: ${(props) => props.theme.colors.headingText};
 `;
 
 const StyledCategory = styled.div`
-  font-weight: 600;
+  font-weight: 700;
   color: #737373;
 `;
 
@@ -42,7 +42,7 @@ const StyledViewProject = styled.span`
   display: block;
   text-align: right;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #007d99;
 `;
 
@@ -90,7 +90,7 @@ const StyledCard = styled.a`
   border-radius: 4px;
   box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 700;
   color: ${(props) => props.theme.colors.bodyText};
   transition: box-shadow 0.2s ease-in-out;
 
