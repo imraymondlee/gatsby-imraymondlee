@@ -1,0 +1,57 @@
+{
+  "Main" : {
+    "card" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "thumbnail" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : {
+                "width" : 400,
+                "height" : 250
+              },
+              "thumbnails" : [ ],
+              "label" : "Thumbnail"
+            }
+          },
+          "title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "paragraph",
+              "label" : "Title"
+            }
+          },
+          "category" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "paragraph",
+              "label" : "Category"
+            }
+          },
+          "description" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "paragraph",
+              "label" : "Description"
+            }
+          },
+          "color" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "paragraph",
+              "label" : "Color"
+            }
+          },
+          "project_link" : {
+            "type" : "Link",
+            "config" : {
+              "label" : "Project Link"
+            }
+          }
+        },
+        "label" : "Card"
+      }
+    }
+  }
+}

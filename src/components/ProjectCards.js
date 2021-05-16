@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import thumbnail from '../images/thumbnail.png';
+import { Link } from 'gatsby';
+// import thumbnail from '../images/thumbnail.png';
 
 const StyledSection = styled.section`
   display: grid;
@@ -84,13 +85,13 @@ const StyledImage = styled.img`
   margin-top: 1rem;
 `;
 
-const StyledCard = styled.a`
+const StyledCard = styled(Link)`
   display: flex;
   flex-direction: column;
   border-radius: 4px;
   box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
   color: ${(props) => props.theme.colors.bodyText};
   transition: box-shadow 0.2s ease-in-out;
 
@@ -114,11 +115,11 @@ const ProjectCards = ({ projects }) => {
   return (
     <StyledSection>
       {projects.map((project, index) => (
-        <StyledCard key={index} href={project.link}>
+        <StyledCard to={project.project_link.url} key={index}>
           <StyledDetails>
-            <StyledCategory>{project.category}</StyledCategory>
-            <StyledTitle>{project.title}</StyledTitle>
-            <StyledDescription>{project.description}</StyledDescription>
+            <StyledCategory>{project.category.text}</StyledCategory>
+            <StyledTitle>{project.title.text}</StyledTitle>
+            <StyledDescription>{project.description.text}</StyledDescription>
             <StyledViewProject>
               View Project
               <StyledViewProjectArrow
@@ -133,11 +134,11 @@ const ProjectCards = ({ projects }) => {
             </StyledViewProject>
           </StyledDetails>
           <StyledGraphics>
-            <StyledImage width="400" src={thumbnail} alt="" />
+            <StyledImage width="400" src={project.thumbnail.url} alt="" />
             <StyledSVGBlob
               viewBox="0 0 600 600"
               xmlns="http://www.w3.org/2000/svg"
-              fillColor={project.cardColor}
+              fillColor={project.color.text}
             >
               <g transform="translate(300,300)">
                 <path d="M118.5,-181.9C155.2,-160.8,187.7,-130.7,203,-93.7C218.4,-56.7,216.6,-12.9,217.2,36.1C217.8,85.2,220.7,139.5,196.7,174.4C172.6,209.2,121.5,224.5,72.2,233.2C22.9,241.8,-24.6,243.7,-70.7,233.5C-116.9,223.3,-161.6,201.1,-192,166.2C-222.3,131.4,-238.4,84,-241.7,36.9C-245.1,-10.1,-235.8,-56.8,-217.2,-99.9C-198.6,-143,-170.7,-182.5,-132.9,-203.1C-95.2,-223.7,-47.6,-225.4,-3.3,-220.2C40.9,-215,81.8,-203,118.5,-181.9Z"></path>
