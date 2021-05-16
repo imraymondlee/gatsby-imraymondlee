@@ -12,8 +12,8 @@ const Nav = () => {
   return (
     <nav>
       <StyledNavList>
-        <NavItem type="anchor" path="/#projects" text="Projects" />
-        <NavItem type="link" path="/about/" text="About" />
+        <NavItem type="link" path="/#projects" text="Projects" />
+        <NavItem type="link" path="/about" text="About" />
         <NavItem type="anchor" path="/LeeRaymondResume.pdf" text="Resume" />
       </StyledNavList>
     </nav>

@@ -113,7 +113,7 @@ const StyledCard = styled(Link)`
 
 const ProjectCards = ({ projects }) => {
   return (
-    <StyledSection>
+    <StyledSection id="projects">
       {projects.map((project, index) => (
         <StyledCard to={project.project_link.url} key={index}>
           <StyledDetails>
