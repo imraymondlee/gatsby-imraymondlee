@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import SliceZone from '../components/SliceZone';
 
 const ProjectPage = ({ data }) => {
   if (!data) return null;
@@ -10,6 +11,7 @@ const ProjectPage = ({ data }) => {
     <Layout>
       <h1>{document.data.title.text}</h1>
       <p>{document.data.subtitle.text}</p>
+      <SliceZone slices={document.data.body} />
     </Layout>
   );
 };
@@ -21,11 +23,29 @@ export const query = graphql`
         node {
           uid
           data {
+            subtitle {
+              text
+            }
             title {
               text
             }
-            subtitle {
-              text
+            body {
+              ... on PrismicProjectPageBodySection {
+                slice_type
+                items {
+                  subheading {
+                    text
+                  }
+                  paragraph {
+                    text
+                  }
+                }
+                primary {
+                  heading {
+                    text
+                  }
+                }
+              }
             }
           }
         }
