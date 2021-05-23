@@ -23,6 +23,16 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Lato", sans-serif;
     line-height: 1.8;
   }
+
+  a {
+    font-weight: 600;
+    color: #007d99;
+    text-decoration: none;
+
+    &:active, :focus, :hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 const StyledMain = styled.main`
