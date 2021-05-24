@@ -65,6 +65,14 @@
               }
             },
             "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              },
               "subheading": {
                 "type": "StructuredText",
                 "config": {
@@ -77,6 +85,13 @@
                 "config": {
                   "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
                   "label": "Paragraph"
+                }
+              },
+              "image_caption": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Image Caption"
                 }
               }
             }

@@ -18,6 +18,22 @@ const StyledSubheading = styled.h3`
   line-height: 1.22222222;
 `;
 
+const StyledFigure = styled.figure`
+  margin: 3rem auto;
+`;
+
+const StyledFigCaption = styled.figcaption`
+  margin-top: 1rem;
+  font-style: italic;
+  color: #737373;
+`;
+
+const StyledImage = styled.img`
+  display: block;
+  width: 100%;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+`;
+
 const ProjectSection = ({ slice }) => {
   return (
     <StyledSection>
@@ -25,8 +41,21 @@ const ProjectSection = ({ slice }) => {
       {slice.items.map((sectionItem, index) => {
         return (
           <React.Fragment key={`section-item=${index}`}>
-            <StyledSubheading>{sectionItem.subheading.text}</StyledSubheading>
-            <p>{sectionItem.paragraph.text}</p>
+            {sectionItem.subheading.text && (
+              <StyledSubheading>{sectionItem.subheading.text}</StyledSubheading>
+            )}
+            {sectionItem.paragraph.text && <p>{sectionItem.paragraph.text}</p>}
+            {sectionItem.image.url && (
+              <StyledFigure>
+                <StyledImage
+                  src={sectionItem.image.url}
+                  alt={sectionItem.image.alt}
+                />
+                <StyledFigCaption>
+                  {sectionItem.image_caption.text}
+                </StyledFigCaption>
+              </StyledFigure>
+            )}
           </React.Fragment>
         );
       })}

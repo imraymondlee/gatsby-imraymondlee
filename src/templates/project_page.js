@@ -133,6 +133,13 @@ export const query = graphql`
                   paragraph {
                     text
                   }
+                  image {
+                    alt
+                    url
+                  }
+                  image_caption {
+                    text
+                  }
                 }
                 primary {
                   heading {
