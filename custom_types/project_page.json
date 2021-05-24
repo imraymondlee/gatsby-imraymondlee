@@ -93,6 +93,13 @@
                   "multi": "paragraph",
                   "label": "Image Caption"
                 }
+              },
+              "image_original_fit": {
+                "type": "Boolean",
+                "config": {
+                  "default_value": false,
+                  "label": "Image Original Fit"
+                }
               }
             }
           }

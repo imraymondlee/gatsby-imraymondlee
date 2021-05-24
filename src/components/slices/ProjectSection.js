@@ -32,6 +32,8 @@ const StyledImage = styled.img`
   display: block;
   width: 100%;
   box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+
+  ${({ originalFit }) => originalFit && 'max-width: fit-content;'}
 `;
 
 const ProjectSection = ({ slice }) => {
@@ -50,6 +52,7 @@ const ProjectSection = ({ slice }) => {
                 <StyledImage
                   src={sectionItem.image.url}
                   alt={sectionItem.image.alt}
+                  originalFit={sectionItem.image_original_fit}
                 />
                 <StyledFigCaption>
                   {sectionItem.image_caption.text}

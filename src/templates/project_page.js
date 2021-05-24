@@ -140,6 +140,7 @@ export const query = graphql`
                   image_caption {
                     text
                   }
+                  image_original_fit
                 }
                 primary {
                   heading {
