@@ -34,7 +34,7 @@ const StyledDescriptionText = styled.div`
 const StyledDescriptionLabel = styled.div`
   margin-bottom: 0.25rem;
   color: ${(props) => props.theme.colors.secondary};
-  font-weight: 600;
+  font-weight: 700;
 `;
 
 const StyledList = styled.ul`

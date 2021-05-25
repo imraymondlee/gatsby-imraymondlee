@@ -25,7 +25,7 @@ const StyledFigure = styled.figure`
 const StyledFigCaption = styled.figcaption`
   margin-top: 1rem;
   font-style: italic;
-  color: #737373;
+  color: ${(props) => props.theme.colors.lightText};
 `;
 
 const StyledImage = styled.img`

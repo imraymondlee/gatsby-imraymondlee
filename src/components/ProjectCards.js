@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-// import thumbnail from '../images/thumbnail.png';
 
 const StyledSection = styled.section`
   display: grid;
@@ -32,7 +31,7 @@ const StyledTitle = styled.div`
 
 const StyledCategory = styled.div`
   font-weight: 700;
-  color: #737373;
+  color: ${(props) => props.theme.colors.lightText};
 `;
 
 const StyledDescription = styled.p`
@@ -44,7 +43,7 @@ const StyledViewProject = styled.span`
   text-align: right;
   font-size: 0.9rem;
   font-weight: 700;
-  color: #007d99;
+  color: ${(props) => props.theme.colors.primary};
 `;
 
 const StyledViewProjectArrow = styled.svg`

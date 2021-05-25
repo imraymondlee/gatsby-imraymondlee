@@ -11,7 +11,7 @@ const StyledLanding = styled.section`
 const StyledTitle = styled.h1`
   margin-bottom: 1rem;
   font-size: 3.052rem;
-  color: #d62e00;
+  color: ${(props) => props.theme.colors.secondary};
 `;
 
 const StyledSubtitle = styled.p`

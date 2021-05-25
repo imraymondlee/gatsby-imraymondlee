@@ -9,6 +9,7 @@ const theme = {
     secondary: '#d62e00',
     headingText: '#181a1b',
     bodyText: '#4a4a4a',
+    lightText: '#737373',
   },
 };
 
@@ -26,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     font-weight: 600;
-    color: #007d99;
+    color: ${(props) => props.theme.colors.primary};
     text-decoration: none;
 
     &:active, :focus, :hover {
