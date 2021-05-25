@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import SliceZone from '../components/SliceZone';
 
 const StyledBanner = styled.div`
-  margin: 4rem 0 2rem 0;
+  margin: 1rem 0 2rem 0;
 `;
 
 const StyledTitle = styled.h1`
@@ -21,6 +21,11 @@ const StyledSubtitle = styled.p`
 const StyledDescription = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: 852px) {
+    flex-direction: row;
+  }
 `;
 
 const StyledDescriptionImage = styled.div`
@@ -29,6 +34,11 @@ const StyledDescriptionImage = styled.div`
 
 const StyledDescriptionText = styled.div`
   flex-basis: 25%;
+  margin-top: 2rem;
+
+  @media (min-width: 852px) {
+    margin-top: 0;
+  }
 `;
 
 const StyledDescriptionLabel = styled.div`

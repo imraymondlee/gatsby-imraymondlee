@@ -10,6 +10,7 @@ const StyledHeader = styled.header`
   align-items: center;
   max-width: 1000px;
   margin: 1.75rem auto;
+  padding: 0.5rem;
 `;
 
 const StyledLogo = styled.img`

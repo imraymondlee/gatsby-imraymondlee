@@ -39,6 +39,7 @@ const GlobalStyle = createGlobalStyle`
 const StyledMain = styled.main`
   max-width: 1000px;
   margin: auto;
+  padding: 0.5rem;
 `;
 
 const Layout = ({ children }) => {

@@ -9,7 +9,7 @@ const StyledSection = styled.section`
   max-width: 400px;
   margin: auto;
 
-  @media (min-width: 850px) {
+  @media (min-width: 852px) {
     grid-template-columns: repeat(2, 1fr);
     max-width: none;
   }

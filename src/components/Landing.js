@@ -21,7 +21,12 @@ const StyledSubtitle = styled.p`
 `;
 
 const StyledLandingImage = styled.img`
+  display: none;
   width: 35%;
+
+  @media (min-width: 852px) {
+    display: block;
+  }
 `;
 
 const Landing = () => {
