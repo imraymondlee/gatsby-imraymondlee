@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledSection = styled.section`
-  max-width: 700px;
-  margin: 5rem auto;
+  margin: 4rem auto;
 `;
 
 const StyledHeading = styled.h2`
@@ -13,6 +12,7 @@ const StyledHeading = styled.h2`
 `;
 
 const StyledSubheading = styled.h3`
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-size: 1.25rem;
   line-height: 1.22222222;

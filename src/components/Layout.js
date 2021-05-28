@@ -37,17 +37,17 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const StyledMain = styled.main`
-  max-width: 1000px;
+  max-width: ${(props) => (props.projectPage ? '680px' : '1000px')};
   margin: auto;
   padding: 0.5rem;
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({ children, projectPage }) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Header />
-      <StyledMain>{children}</StyledMain>
+      <StyledMain projectPage={projectPage}>{children}</StyledMain>
     </ThemeProvider>
   );
 };

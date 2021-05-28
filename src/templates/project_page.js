@@ -29,7 +29,7 @@ const StyledDescription = styled.div`
 `;
 
 const StyledDescriptionImage = styled.div`
-  flex-basis: 65%;
+  flex-basis: 70%;
 `;
 
 const StyledDescriptionText = styled.div`
@@ -42,7 +42,6 @@ const StyledDescriptionText = styled.div`
 `;
 
 const StyledDescriptionLabel = styled.div`
-  margin-bottom: 0.25rem;
   color: ${(props) => props.theme.colors.secondary};
   font-weight: 700;
 `;
@@ -51,6 +50,7 @@ const StyledList = styled.ul`
   margin: 0 0 1.5rem 0;
   padding: 0;
   list-style: none;
+  font-size: 0.9rem;
 `;
 
 const StyledImage = styled.img`
@@ -70,7 +70,7 @@ const ProjectPage = ({ data }) => {
   const document = data.allPrismicProjectPage.edges[0].node;
 
   return (
-    <Layout>
+    <Layout projectPage={true}>
       <section>
         <StyledBanner>
           <StyledTitle>{document.data.title.text}</StyledTitle>
