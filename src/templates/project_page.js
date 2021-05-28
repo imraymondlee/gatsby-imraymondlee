@@ -61,7 +61,7 @@ const StyledImage = styled.img`
 
 const StyledDivider = styled.hr`
   width: 30%;
-  margin: 3.5rem auto;
+  margin: 4rem auto 0 auto;
   border-bottom: 3px solid #007d99;
 `;
 
