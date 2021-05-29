@@ -5,7 +5,7 @@ import logo from '../images/landing-img.svg';
 const StyledLanding = styled.section`
   display: flex;
   justify-content: space-between;
-  margin: 5rem auto;
+  margin: 2rem auto 5rem auto;
 `;
 
 const StyledTitle = styled.h1`

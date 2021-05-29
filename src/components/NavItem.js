@@ -7,22 +7,47 @@ const StyledNavItem = styled.li`
 `;
 
 const StyledLink = styled(Link)`
-  margin: 0 0.5rem;
+  margin: 0 0.75rem;
+  padding-bottom: 0.125rem;
   text-decoration: none;
+  font-weight: 400;
   color: ${(props) => props.theme.colors.bodyText};
+
+  &.pageActive {
+    color: ${(props) => props.theme.colors.bodyText};
+    border-bottom: 3px solid #007d99;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    border-bottom: 3px solid #007d99;
+  }
 `;
 
 const StyledAnchor = styled.a`
-  margin: 0 0.5rem;
+  margin: 0 0.75rem;
+  padding-bottom: 0.125rem;
   text-decoration: none;
+  font-weight: 400;
   color: ${(props) => props.theme.colors.bodyText};
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    border-bottom: 3px solid #007d99;
+  }
 `;
 
 const NavItem = ({ type, path, text }) => {
   return (
     <StyledNavItem>
       {type === 'link' ? (
-        <StyledLink to={path}>{text}</StyledLink>
+        <StyledLink to={path} activeClassName="pageActive">
+          {text}
+        </StyledLink>
       ) : (
         <StyledAnchor href={path}>{text}</StyledAnchor>
       )}
