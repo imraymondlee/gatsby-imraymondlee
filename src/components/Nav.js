@@ -14,7 +14,11 @@ const Nav = () => {
       <StyledNavList>
         <NavItem type="link" path="/" text="Projects" />
         <NavItem type="link" path="/about" text="About" />
-        <NavItem type="anchor" path="/LeeRaymondResume.pdf" text="Resume" />
+        <NavItem
+          type="anchor"
+          path="../../LeeRaymondResume.pdf"
+          text="Resume"
+        />
       </StyledNavList>
     </nav>
   );
