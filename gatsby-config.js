@@ -22,6 +22,7 @@ module.exports = {
         schemas: {
           project_cards: require('./custom_types/project_cards.json'),
           project_page: require('./custom_types/project_page.json'),
+          about_page: require('./custom_types/about_page.json'),
         },
       },
     },
