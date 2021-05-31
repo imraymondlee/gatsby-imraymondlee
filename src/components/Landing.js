@@ -9,7 +9,7 @@ const StyledLanding = styled.section`
 `;
 
 const StyledTitle = styled.h1`
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   font-size: 3.052rem;
   color: ${(props) => props.theme.colors.secondary};
 `;
@@ -33,8 +33,10 @@ const Landing = () => {
   return (
     <StyledLanding>
       <div>
-        <StyledTitle>Title Here</StyledTitle>
-        <StyledSubtitle>Subtitle Here</StyledSubtitle>
+        <StyledTitle>Hi, I'm Raymond Lee</StyledTitle>
+        <StyledSubtitle>
+          A web developer building accessible experiences.
+        </StyledSubtitle>
       </div>
       <StyledLandingImage src={logo} alt="" />
     </StyledLanding>

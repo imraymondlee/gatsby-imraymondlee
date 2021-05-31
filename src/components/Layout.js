@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from './Header';
+import Footer from './Footer';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 const theme = {
@@ -26,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    font-weight: 600;
+    font-weight: 700;
     color: ${(props) => props.theme.colors.primary};
     text-decoration: none;
 
@@ -48,6 +49,7 @@ const Layout = ({ children, projectPage }) => {
       <GlobalStyle />
       <Header />
       <StyledMain projectPage={projectPage}>{children}</StyledMain>
+      <Footer />
     </ThemeProvider>
   );
 };
