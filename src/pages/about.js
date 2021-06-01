@@ -9,7 +9,7 @@ const StyledSection = styled.section`
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  margin: 5rem auto;
+  margin: 2rem auto;
 
   @media (min-width: 852px) {
     flex-direction: row;
