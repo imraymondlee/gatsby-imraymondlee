@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import SliceZone from '../components/SliceZone';
@@ -71,6 +72,10 @@ const ProjectPage = ({ data }) => {
 
   return (
     <Layout projectPage={true}>
+      <Helmet>
+        <html lang="en" />
+        <title>{document.data.title.text} | Raymond Lee</title>
+      </Helmet>
       <section>
         <StyledBanner>
           <StyledTitle>{document.data.title.text}</StyledTitle>

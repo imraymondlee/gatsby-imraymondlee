@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 
 const StyledSection = styled.section`
@@ -48,6 +49,10 @@ const StyledLink = styled(Link)`
 const NotFoundPage = () => {
   return (
     <Layout>
+      <Helmet>
+        <html lang="en" />
+        <title>Page Not Found | Raymond Lee</title>
+      </Helmet>
       <StyledSection>
         <StyledTitle>Oops!</StyledTitle>
         <StyledDescription>

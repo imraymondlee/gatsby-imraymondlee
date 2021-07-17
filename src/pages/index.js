@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import Landing from '../components/Landing';
 import ProjectCards from '../components/ProjectCards';
@@ -10,6 +11,10 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <html lang="en" />
+        <title>Raymond Lee</title>
+      </Helmet>
       <Landing />
       <ProjectCards projects={project_cards} />
     </Layout>

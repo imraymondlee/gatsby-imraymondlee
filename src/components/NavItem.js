@@ -49,7 +49,7 @@ const NavItem = ({ type, path, text }) => {
           {text}
         </StyledLink>
       ) : (
-        <StyledAnchor href={path} target="_blank">
+        <StyledAnchor href={path} target="_blank" rel="noreferrer">
           {text}
         </StyledAnchor>
       )}

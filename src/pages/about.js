@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import { RichText } from 'prismic-reactjs';
 
@@ -43,6 +44,10 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <html lang="en" />
+        <title>About | Raymond Lee</title>
+      </Helmet>
       <StyledSection>
         <StyledImage src="../../profile.jpg" />
         <StyledText>
