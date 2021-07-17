@@ -44,6 +44,8 @@ const StyledMain = styled.main`
 `;
 
 const Layout = ({ children, projectPage }) => {
+  console.log('Explore the source code of my website here: https://github.com/imraymondlee/gatsby-imraymondlee');
+  
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
