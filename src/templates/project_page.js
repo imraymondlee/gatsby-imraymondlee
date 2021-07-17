@@ -75,6 +75,7 @@ const ProjectPage = ({ data }) => {
       <Helmet>
         <html lang="en" />
         <title>{document.data.title.text} | Raymond Lee</title>
+        <meta name="description" content={document.data.subtitle.text} />
       </Helmet>
       <section>
         <StyledBanner>

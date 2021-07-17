@@ -47,6 +47,7 @@ const AboutPage = ({ data }) => {
       <Helmet>
         <html lang="en" />
         <title>About | Raymond Lee</title>
+        <meta name="description" content="My name is Raymond Lee, and I'm a web developer building accessible experiences." />
       </Helmet>
       <StyledSection>
         <StyledImage src="../../profile.jpg" />

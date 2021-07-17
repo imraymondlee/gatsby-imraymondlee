@@ -52,6 +52,7 @@ const NotFoundPage = () => {
       <Helmet>
         <html lang="en" />
         <title>Page Not Found | Raymond Lee</title>
+        <meta name="description" content="Page Not Found" />
       </Helmet>
       <StyledSection>
         <StyledTitle>Oops!</StyledTitle>
