@@ -38,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const StyledMain = styled.main`
-  max-width: ${(props) => (props.projectPage ? '680px' : '1000px')};
+  max-width: ${(props) => (props.projectPage ? '690px' : '1000px')};
   margin: auto;
   padding: 0.5rem;
 `;
