@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import favicon from '../images/favicon.ico';
 import Layout from '../components/Layout';
 
 const StyledSection = styled.section`
@@ -52,6 +53,7 @@ const NotFoundPage = () => {
       <Helmet>
         <html lang="en" />
         <title>Page Not Found | Raymond Lee</title>
+        <link rel="icon" type="image/x-icon" href={favicon} />
         <meta name="description" content="Page Not Found" />
       </Helmet>
       <StyledSection>

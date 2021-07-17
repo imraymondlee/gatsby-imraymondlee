@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import favicon from '../images/favicon.ico';
 import Layout from '../components/Layout';
 import { RichText } from 'prismic-reactjs';
 
@@ -47,6 +48,7 @@ const AboutPage = ({ data }) => {
       <Helmet>
         <html lang="en" />
         <title>About | Raymond Lee</title>
+        <link rel="icon" type="image/x-icon" href={favicon} />
         <meta name="description" content="My name is Raymond Lee, and I'm a web developer building accessible experiences." />
       </Helmet>
       <StyledSection>

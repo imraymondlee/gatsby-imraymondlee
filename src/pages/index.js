@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import favicon from '../images/favicon.ico';
 import Layout from '../components/Layout';
 import Landing from '../components/Landing';
 import ProjectCards from '../components/ProjectCards';
@@ -14,6 +15,7 @@ const IndexPage = ({ data }) => {
       <Helmet>
         <html lang="en" />
         <title>Raymond Lee</title>
+        <link rel="icon" type="image/x-icon" href={favicon} />
         <meta name="description" content="My name is Raymond Lee, and I'm a web developer building accessible experiences." />
       </Helmet>
       <Landing />

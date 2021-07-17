@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
+import favicon from '../images/favicon.ico';
 import Layout from '../components/Layout';
 import SliceZone from '../components/SliceZone';
 
@@ -75,6 +76,7 @@ const ProjectPage = ({ data }) => {
       <Helmet>
         <html lang="en" />
         <title>{document.data.title.text} | Raymond Lee</title>
+        <link rel="icon" type="image/x-icon" href={favicon} />
         <meta name="description" content={document.data.subtitle.text} />
       </Helmet>
       <section>
