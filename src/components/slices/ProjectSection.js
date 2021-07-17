@@ -24,6 +24,7 @@ const StyledFigure = styled.figure`
 
 const StyledFigCaption = styled.figcaption`
   margin-top: 1rem;
+  text-align: center;
   font-size: 0.9rem;
   font-style: italic;
   color: ${(props) => props.theme.colors.lightText};
@@ -32,9 +33,14 @@ const StyledFigCaption = styled.figcaption`
 const StyledImage = styled.img`
   display: block;
   width: 100%;
+  margin: auto;
   box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
 
   ${({ originalFit }) => originalFit && 'max-width: fit-content;'}
+`;
+
+const StyledParagraph = styled.p`
+  margin-bottom: 1.5rem;
 `;
 
 const ProjectSection = ({ slice }) => {
@@ -47,7 +53,7 @@ const ProjectSection = ({ slice }) => {
             {sectionItem.subheading.text && (
               <StyledSubheading>{sectionItem.subheading.text}</StyledSubheading>
             )}
-            {sectionItem.paragraph.text && <p>{sectionItem.paragraph.text}</p>}
+            {sectionItem.paragraph.text && <StyledParagraph>{sectionItem.paragraph.text}</StyledParagraph>}
             {sectionItem.image.url && (
               <StyledFigure>
                 <StyledImage

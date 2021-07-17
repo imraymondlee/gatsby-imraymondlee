@@ -96,7 +96,7 @@ const ProjectPage = ({ data }) => {
               {document.data.links.raw.map((item, index) => {
                 return (
                   <li key={index}>
-                    <a href={item.spans[0].data.url}>{item.text}</a>
+                    <a href={item.spans[0].data.url} target="_blank">{item.text}</a>
                   </li>
                 );
               })}
