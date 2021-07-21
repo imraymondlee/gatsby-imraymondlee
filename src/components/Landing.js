@@ -9,8 +9,9 @@ const StyledLanding = styled.section`
 `;
 
 const StyledTitle = styled.h1`
-  margin-bottom: 0;
+  margin-bottom: 0.75rem;
   font-size: 3.052rem;
+  line-height: 1.1;
   color: ${(props) => props.theme.colors.secondary};
 `;
 

@@ -56,9 +56,13 @@ const StyledViewProjectArrow = styled.svg`
 
 const StyledGraphics = styled.div`
   position: relative;
-  overflow: hidden;
   flex-basis: 40%;
   text-align: center;
+  overflow: hidden;
+
+  @supports (overflow: clip) {
+    overflow: clip;
+  }
 `;
 
 const StyledSVGBlob = styled.svg`

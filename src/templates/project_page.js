@@ -49,7 +49,7 @@ const StyledDescriptionLabel = styled.div`
 `;
 
 const StyledList = styled.ul`
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1rem 0;
   padding: 0;
   list-style: none;
   font-size: 0.9rem;
@@ -104,7 +104,13 @@ const ProjectPage = ({ data }) => {
               {document.data.links.raw.map((item, index) => {
                 return (
                   <li key={index}>
-                    <a href={item.spans[0].data.url} target="_blank" rel="noreferrer">{item.text}</a>
+                    <a
+                      href={item.spans[0].data.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {item.text}
+                    </a>
                   </li>
                 );
               })}
