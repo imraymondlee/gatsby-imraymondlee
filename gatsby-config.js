@@ -27,5 +27,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-NR3FFJW",
+        includeInDevelopment: false,
+      },
+    },
   ],
 };
